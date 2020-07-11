@@ -3167,24 +3167,24 @@ extern "C" {
     pub fn SLsmg_normal_video();
 }
 extern "C" {
-    pub fn SLsmg_printf(arg1: *mut c_char, ...);
+    pub fn SLsmg_printf(arg1: *const c_char, ...);
 }
 /*
 extern "C" {
-    pub fn SLsmg_vprintf(arg1: *mut c_char, arg2: *mut __va_list_tag);
+    pub fn SLsmg_vprintf(arg1: *const c_char, arg2: *mut __va_list_tag);
 }
 */
 extern "C" {
-    pub fn SLsmg_write_string(arg1: *mut c_char);
+    pub fn SLsmg_write_string(arg1: *const c_char);
 }
 extern "C" {
-    pub fn SLsmg_write_nstring(arg1: *mut c_char, arg2: c_uint);
+    pub fn SLsmg_write_nstring(arg1: *const c_char, arg2: c_uint);
 }
 extern "C" {
-    pub fn SLsmg_write_chars(u: *mut SLuchar_Type, umax: *mut SLuchar_Type);
+    pub fn SLsmg_write_chars(u: *const SLuchar_Type, umax: *mut SLuchar_Type);
 }
 extern "C" {
-    pub fn SLsmg_write_nchars(str_: *mut c_char, len: c_uint);
+    pub fn SLsmg_write_nchars(str_: *const c_char, len: c_uint);
 }
 extern "C" {
     pub fn SLsmg_write_char(ch: SLwchar_Type);
@@ -3212,6 +3212,7 @@ extern "C" {
     pub fn SLsmg_touch_screen();
 }
 extern "C" {
+    #[must_use]
     pub fn SLsmg_init_smg() -> c_int;
 }
 extern "C" {
