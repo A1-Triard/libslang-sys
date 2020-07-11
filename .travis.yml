@@ -1,3 +1,5 @@
+before_install:
+- sudo apt-get -y install libslang2-dev
 language: rust
 rust:
 - nightly
