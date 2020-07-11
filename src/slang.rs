@@ -3212,6 +3212,7 @@ extern "C" {
     pub fn SLsmg_touch_screen();
 }
 extern "C" {
+    /// Returns zero if successful or -1 if it cannot allocate space for the virtual display.
     #[must_use]
     pub fn SLsmg_init_smg() -> c_int;
 }
