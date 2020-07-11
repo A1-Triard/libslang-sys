@@ -3,7 +3,7 @@ use std::fs::{File};
 use std::io::{Write};
 use std::path::{Path, PathBuf};
 use std::env::{self};
-use pkg_config::{self, Library};
+use pkg_config::Library;
 
 fn main() {
     println!("cargo:rerun-if-env-changed=PKG_CONFIG_PATH");

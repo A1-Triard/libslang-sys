@@ -10,6 +10,7 @@ keywords = ["S-Lang"]
 categories = ["external-ffi-binding", "no-std"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/A1-Triard/libslang-sys"
+edition = "2018"
 
 [dependencies]
 libc = "0.2.72"
