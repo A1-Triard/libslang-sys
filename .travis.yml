@@ -1,6 +1,5 @@
 before_install:
 - sudo apt-get -y install libslang2-dev
-- sudo apt-get -y install pkg-config
 language: rust
 rust:
 - nightly
