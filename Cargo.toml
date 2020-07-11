@@ -2,8 +2,14 @@
 links="slang"
 name = "libslang-sys"
 version = "0.1.0"
-authors = ["Warlock <internalmike@gmail.com>"]
-edition = "2018"
+authors = ["warlock <internalmike@gmail.com>"]
+description = "Rust S-Slang library low-level FFI."
+readme = "README.md"
+documentation = "https://docs.rs/libslang-sys/"
+keywords = ["S-Lang"]
+categories = ["external-ffi-binding", "no-std"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/A1-Triard/libslang-sys"
 
 [dependencies]
 libc = "0.2.72"
