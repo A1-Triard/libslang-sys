@@ -3043,15 +3043,15 @@ extern "C" {
 extern "C" {
     pub fn SLtt_set_color(
         arg1: c_int,
-        arg2: *mut c_char,
-        arg3: *mut c_char,
-        arg4: *mut c_char,
+        arg2: *const c_char,
+        arg3: *const c_char,
+        arg4: *const c_char,
     ) -> c_int;
 }
 extern "C" {
     pub fn SLtt_set_mono(
         arg1: c_int,
-        arg2: *mut c_char,
+        arg2: *const c_char,
         arg3: SLtt_Char_Type,
     ) -> c_int;
 }
